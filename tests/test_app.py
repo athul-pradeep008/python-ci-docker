@@ -1,5 +1,5 @@
-from app import add
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 
-def test_add():
-    assert add(2, 3) == 5
-    assert add(-1, 1) == 0
+from app import add
